@@ -14,9 +14,9 @@ def valid(args, model, test_loader, device):
         with torch.no_grad():
             logits = model(x)
 
-            total_loss += loss_fct(logits, y)
+            total_loss += loss_fct(logits[0], y)
             
-            preds = torch.argmax(logits, dim=-1)
+            preds = torch.argmax(logits[0], dim=-1)
 
             correct += (preds == y).float().sum()
 
