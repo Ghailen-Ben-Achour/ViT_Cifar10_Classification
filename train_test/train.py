@@ -1,8 +1,31 @@
+train.py
+Who has access
+Not shared
+System properties
+Type
+Text
+Size
+3 KB
+Storage used
+3 KB
+Location
+train_test
+Owner
+me
+Modified
+3 Nov 2021 by me
+Opened
+07:50 by me
+Created
+29 Oct 2021 with Google Drive for desktop
+Add a description
+Viewers can download
 import torch
 from torch.nn import CrossEntropyLoss
 from load_data import get_loader
 from time import perf_counter
 import os
+import wandb
 
 from train_test.validation import valid
 from utils import save_checkpoint, load_checkpoint
@@ -36,7 +59,17 @@ def train(args, model, device):
   # Prepare dataset
   
 
-
+  wandb.login()
+  #Initialize WandB 
+  wandb.init(name=args.name, 
+           project='ViT',
+           notes='Cifar classification', 
+           tags=['First Run'],
+           entity='ghailen', 
+           id='ViT', resume="allow")
+        
+        
+  wandb.watch([model], log='all')
   for epoch in range(start_epoch, args.epochs):
         print("***TRAINING***")
         print("---------------")
@@ -64,11 +97,12 @@ def train(args, model, device):
         valid_acc, valid_loss = valid(args, model, test_loader, device)
         print("Epoch: (%3d/%3d) | Val_acc: %.2e | Loss: %.2e " % 
             (epoch, args.epochs, valid_acc, valid_loss))
+        
+        wandb.log({
+                "ViT_Validation_Accuracy": valid_acc,
+                "ViT_Validation_Loss" : valid_loss})
 
         save_checkpoint({'epoch': epoch + 1,
                                 'ViT': model.state_dict(),
                                 'optimizer': optimizer.state_dict()},
                                  args)
-        #save_model(args, model)
-        #accuracy = 100 * correct / (len(train_loader)*args.batch_size)
-        #print(accuracy)
