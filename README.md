@@ -1,2 +1,2 @@
 # ViT_Cifar10_Classification
-Image classification using vision transformers
+In this work, we focus on vision transformers for classification tasks. Transformers have been widely used is NLP and time series.
