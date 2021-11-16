@@ -16,4 +16,4 @@ v = ViT(
 )
 ```
 ## Usage
-
+- `image_size`: int
