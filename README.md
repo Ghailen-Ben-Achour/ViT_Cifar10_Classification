@@ -17,5 +17,6 @@ v = ViT(
 ```
 ## Usage
 - `image_size`: int
-Image size. If you have rectangular images, make sure your image size is the maximum of the width and height
+Image size. If you have rectangular images, make sure your image size is the maximum of the width and height.
+- `patch_size`: int
 
