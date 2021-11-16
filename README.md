@@ -19,4 +19,6 @@ v = ViT(
 - `image_size`: int
 Image size. If you have rectangular images, make sure your image size is the maximum of the width and height.
 - `patch_size`: int
+Number of patches. `image_size` must be divisible by `patch_size`.
+
 
