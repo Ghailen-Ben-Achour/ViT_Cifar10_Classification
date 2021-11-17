@@ -24,6 +24,7 @@ Number of patches. `image_size` must be divisible by `patch_size`. (The number o
 Number of classes to classify. (outputs)
 - `dim`: int  
 Last dimension of output tensor after linear `transformation nn.Linear(..., dim)`.
+- `depth`: int  
 
 
 
