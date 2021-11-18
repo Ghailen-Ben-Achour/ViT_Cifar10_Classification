@@ -27,6 +27,7 @@ Last dimension of output tensor after linear `transformation nn.Linear(..., dim)
 - `depth`: int  
 Number of Transformer blocks.
 - `head`: int  
+Number of heads in Multi-head Attention layer.
 
 
 
