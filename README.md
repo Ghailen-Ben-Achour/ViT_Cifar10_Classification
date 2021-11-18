@@ -26,6 +26,7 @@ Number of classes to classify. (outputs)
 Last dimension of output tensor after linear `transformation nn.Linear(..., dim)`.
 - `depth`: int  
 Number of Transformer blocks.
+- `head`: int  
 
 
 
