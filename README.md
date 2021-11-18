@@ -29,7 +29,7 @@ Number of Transformer blocks.
 - `head`: int  
 Number of heads in Multi-head Attention layer.
 - `mlp_dim`: int  
-Dimension of the MLP (FeedForward) layer.
+Dimension of the MLP (FeedForward) layer.  
 - `channels`: int, default `3`
 
 
