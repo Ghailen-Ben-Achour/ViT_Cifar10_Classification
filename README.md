@@ -32,7 +32,9 @@ Number of heads in Multi-head Attention layer.
 Dimension of the MLP (FeedForward) layer.  
 - `channels`: int, default `3`  
 Number of image's channels.
-- `dropout`: float between `[0, 1]`, default `0`.
+- `dropout`: float between `[0, 1]`, default `0`.  
+Dropout rate.
+
 
 
 
