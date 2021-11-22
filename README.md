@@ -34,6 +34,7 @@ Dimension of the MLP (FeedForward) layer.
 Number of image's channels.
 - `dropout`: float between `[0, 1]`, default `0`.  
 Dropout rate.
+- `emb_dropout`: float between `[0, 1]`, default `0`.  
 
 
 
