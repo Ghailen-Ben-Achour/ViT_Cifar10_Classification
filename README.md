@@ -35,7 +35,8 @@ Number of image's channels.
 - `dropout`: float between `[0, 1]`, default `0`.  
 Dropout rate.
 - `emb_dropout`: float between `[0, 1]`, default `0`.  
-Number of image's channels.
+Number of image's channels.  
+- `pool`: string  
 
 
 
