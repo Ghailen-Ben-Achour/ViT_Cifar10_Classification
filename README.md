@@ -38,7 +38,7 @@ Dropout rate.
 Number of image's channels.  
 - `pool`: string  
 Either `cls` token pooling or `mean` pooling.
-
+## Usage
 
 
 
