@@ -1,3 +1,4 @@
 einops
 wandb
 numpy
+tqdm
