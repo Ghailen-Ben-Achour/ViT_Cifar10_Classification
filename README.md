@@ -39,7 +39,8 @@ Number of image's channels.
 - `pool`: string  
 Either `cls` token pooling or `mean` pooling.
 ## Usage
-Install dependencies using this command:
+Install dependencies using this command:  
+pip install -r requirements.txt
 
 
 
