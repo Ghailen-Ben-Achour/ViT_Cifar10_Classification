@@ -44,5 +44,6 @@ Install dependencies using this command:
 ```bash
 pip install -r requirements.txt
 ```
+To train the ViT on image classification you can use this command:
 
 
