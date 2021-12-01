@@ -46,6 +46,6 @@ pip install -r requirements.txt
 ```
 To train the ViT on image classification you can use this command:
 ```bash
-pip main.py --name trial
+python main.py --name trial
 ```
 
